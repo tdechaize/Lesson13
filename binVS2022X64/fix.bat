@@ -1,0 +1,4 @@
+SET DIRECTORY_NAME=Release
+TAKEOWN /f %DIRECTORY_NAME% /r /d O
+ICACLS %DIRECTORY_NAME% /grant administrateur:(WD,WDAC) /t
+PAUSE
